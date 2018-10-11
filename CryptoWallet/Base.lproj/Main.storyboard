@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone Verification View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PhoneVerificationViewController" customModule="CryptoWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwS-cK-VEI">
+                                <rect key="frame" x="60" y="84" width="255" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gB4-Km-zrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1H2-Gb-58E" customClass="MDCRaisedButton">
+                                <rect key="frame" x="94" y="467" width="187" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="euQ-fV-SiJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="VerifyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWX-QM-ulS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CryptoWallet Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vnX-U0-XPi">
+                                <rect key="frame" x="86" y="136" width="203" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="UjS-id-cgA"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Phone Number" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="s1F-IV-SGa" customClass="MDCTextField">
+                                <rect key="frame" x="60" y="339" width="255" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="1aA-eC-zPB"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login using a valid phone number." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB4-fJ-UCp">
+                                <rect key="frame" x="35" y="386" width="305" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="N2i-2q-8Bw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xB4-fJ-UCp" firstAttribute="top" secondItem="s1F-IV-SGa" secondAttribute="bottom" constant="8" id="57Z-a4-wnW"/>
+                            <constraint firstItem="jwS-cK-VEI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="F2j-IG-hPk"/>
+                            <constraint firstItem="jwS-cK-VEI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="IrY-Yt-GRu"/>
+                            <constraint firstItem="1H2-Gb-58E" firstAttribute="top" secondItem="s1F-IV-SGa" secondAttribute="bottom" constant="89" id="JGJ-0b-7GR"/>
+                            <constraint firstItem="xB4-fJ-UCp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="JWN-nd-o1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jwS-cK-VEI" secondAttribute="trailing" constant="60" id="SZe-41-l63"/>
+                            <constraint firstItem="vnX-U0-XPi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Tbt-do-2Rd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xB4-fJ-UCp" secondAttribute="trailing" constant="35" id="Te7-Jd-SrD"/>
+                            <constraint firstItem="1H2-Gb-58E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="VXt-wR-kdG"/>
+                            <constraint firstItem="s1F-IV-SGa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Z2E-kb-5Wr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1F-IV-SGa" secondAttribute="trailing" constant="60" id="e0j-g8-ixp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1H2-Gb-58E" secondAttribute="trailing" constant="94" id="fJ4-Cz-cFQ"/>
+                            <constraint firstItem="vnX-U0-XPi" firstAttribute="top" secondItem="jwS-cK-VEI" secondAttribute="bottom" constant="8" id="hj8-TD-tv1"/>
+                            <constraint firstItem="s1F-IV-SGa" firstAttribute="top" secondItem="vnX-U0-XPi" secondAttribute="bottom" constant="30" id="lt4-qY-VbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnX-U0-XPi" secondAttribute="trailing" constant="86" id="t4J-cZ-74v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="VerifyButton" destination="1H2-Gb-58E" id="5eW-iS-OX0"/>
+                        <outlet property="phoneNumField" destination="s1F-IV-SGa" id="HzD-sN-i4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="25.862068965517242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CryptoWallet Logo" width="180" height="180"/>
+    </resources>
+</document>

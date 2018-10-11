@@ -1,0 +1,56 @@
+PODS:
+  - libPhoneNumber-iOS (0.9.13)
+  - MaterialComponents/AnimationTiming (66.0.0)
+  - MaterialComponents/Buttons (66.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (66.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (66.0.0)
+  - MaterialComponents/private/Application (66.0.0)
+  - MaterialComponents/private/Math (66.0.0)
+  - MaterialComponents/private/Shapes (66.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/ShadowElevations (66.0.0)
+  - MaterialComponents/ShadowLayer (66.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/TextFields (66.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (66.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (1.1.0)
+  - MDFTextAccessibility (1.2.0)
+
+DEPENDENCIES:
+  - libPhoneNumber-iOS (~> 0.9)
+  - MaterialComponents/Buttons
+  - MaterialComponents/TextFields
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libPhoneNumber-iOS
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+
+SPEC CHECKSUMS:
+  libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
+  MaterialComponents: 2b92bfea789f775ddb5a7060aec9edb8f7bb971b
+  MDFInternationalization: b5b8626628abf026e630e5ebaeee563037712cbb
+  MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
+
+PODFILE CHECKSUM: 052f21c35a5716f62e5439973e6c5bd288bdc600
+
+COCOAPODS: 1.5.3
